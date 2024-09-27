@@ -178,7 +178,7 @@ a {
   color: white;
   cursor: pointer;
   border: 1px solid white;
-  padding: 4px 5px 0 5px;
+  padding: 4px 15px 0 15px;
   border-radius: 5px;
 }
 .tab.active {
@@ -232,11 +232,23 @@ a {
 }
 .edit-price input {
   padding: 10px;
-  width: 100px;
+  width: 94%;
 }
 .price {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.price h4{
+  font-family: myFont;
+}
+.price h5{
+  text-align: center;
+  padding: 5px 0;
+}
+.price-box{
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 10px 0;
 }
