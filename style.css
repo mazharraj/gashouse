@@ -24,12 +24,12 @@ body {
 }
 #gaz {
   display: flex;
-  width: 100vw;
+  width: 300px;
   padding: 0 10px;
   overflow-x:scroll ;
 }
-.box{
-
+.box::-webkit-scrollbar{
+display: none;
 }
 .gas-bg {
   position: relative;
