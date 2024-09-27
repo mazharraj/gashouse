@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -12,28 +11,40 @@ body {
   display: flex;
   justify-content: center;
   font-family: myFont;
+  background: linear-gradient(to bottom, #008bda, #02448f);
+  min-height: 100vh;
 }
+
 #container {
-  background-color: #4d1373;
-width: 100%;
-  height: 100vh;
+  width: 100%;
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-.main{
+}
+#gaz {
+  
+}
+.gas-bg {
+  position: relative;
+  height: 200px;
+  width: 300px;
+ 
+}
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-}
 .logo img {
-  height: 90px;
+  height: 100px;
+  border-right: 2px solid #fff;
 }
 .border {
   width: 100%;
   height: 2px;
   background-color: #fcfc54;
+  margin: 10px 0;
 }
 .identity {
   display: flex;
@@ -43,99 +54,112 @@ width: 100%;
   gap: 20px;
   margin-top: 20px;
 }
+
+.identity-text {
+  color: white;
+  font-family: myFont;
+}
+.identity-text p {
+  font-size: 20px;
+}
+.identity-text h3 {
+  font-size: 22px;
+}
+.identity-text h4 {
+  font-size: 18px;
+  font-weight: 300;
+}
 .bengali {
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #671999;
+  background-color: #4e88bd;
   padding: 20px;
   border-radius: 15px;
   margin: 20px 0;
   text-align: center;
 }
 .bengali h2 {
-  font-size: 22px;
+  font-size: 18px;
 }
 .bengali h3 {
-  font-size: 26px;
-  color: #ff953e;
+  font-size: 22px;
+  color: #ffff09;
 }
 .bengali h4 {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.gas-bg img {
+  position: absolute;
+  z-index: -1;
+
+  width: 300px;
+}
+.gas-text {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  top: 32px;
+}
+.order {
+  margin: 40px 0 0 0;
+  color: white;
+  font-size: 16px;
 }
 button {
   display: flex;
   align-items: center;
   gap: 5px;
-  font-size: 24px;
+  font-size: 16px;
   border-radius: 25px;
   border: 2px solid #fff;
   padding: 5px 20px;
   background-color: transparent;
   color: #fff;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 60px;
 }
-button:hover{
+button:hover {
   background-color: white;
   color: #4d1373;
   border-color: #4d1373;
 }
-#slider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  overflow: hidden;
-}
-.gas {
-  display: none;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  background-color: #e0d6ea;
-  padding: 10px;
-  border-radius: 10px;
-  min-width: 290px;
-  margin: 0 10px;
-}
-.gas.active {
-  display: flex;
-}
-.gas img {
-  height: 150px;
-}
+
 .name {
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 18px;
 }
+
 .weight {
   font-size: 20px;
-  font-weight: bold;
+  text-align: center;
+  padding-top: 5px;
+}
+.border-pr {
+  height: 1px;
+  background-color: rgb(156, 154, 154);
+  width: full;
+  margin: 2px 0;
 }
 .mrp {
-  font-size: 30px;
+  font-size: 20px;
 }
 .mrp span {
   font-weight: bold;
 }
-.nav-buttons {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 10px;
-  margin-top: -5px;
-}
-a{
+
+a {
   text-decoration: none;
 }
 .tabs {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   display: flex;
   justify-content: space-around;
-  background-color: #671999;
+  background-color: #64a2ff;
   padding: 10px;
 }
 .tab {
@@ -156,19 +180,17 @@ a{
 .content.active {
   display: block;
 }
-#user{
-
+#user {
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
   border: 1px solid gray;
-
 }
-#user h3{
-text-align: center;
+#user h3 {
+  text-align: center;
 }
-#loginForm{
+#loginForm {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -200,7 +222,7 @@ text-align: center;
   padding: 10px;
   width: 100px;
 }
-.price{
+.price {
   display: flex;
   flex-direction: column;
   align-items: center;
