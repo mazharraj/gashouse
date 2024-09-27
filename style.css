@@ -44,25 +44,20 @@ display: none;
   align-items: center;
 }
 .logo img {
-  height: 120px;
-  border-right: 2px solid #fff;
+  height: 150px;
+
 }
 .border {
   width: 100%;
-  height: 2px;
+  height: 5px;
   background-color: #fcfc54;
   margin: 10px 0;
 }
 .identity {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: white;
-  gap: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
-.identity-text {
+/* .identity-text {
   color: white;
   font-family: myFont;
 }
@@ -75,7 +70,7 @@ display: none;
 .identity-text h4 {
   font-size: 16px;
   font-weight: 300;
-}
+} */
 .bengali {
   font-family: myFont;
   color: white;
