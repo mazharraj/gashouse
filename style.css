@@ -10,9 +10,10 @@
 body {
   display: flex;
   justify-content: center;
-  font-family: myFont;
+ font-family: "Montserrat", sans-serif;
   background: linear-gradient(to bottom, #008bda, #02448f);
   min-height: 100vh;
+
 }
 
 #container {
@@ -43,7 +44,7 @@ display: none;
   align-items: center;
 }
 .logo img {
-  height: 100px;
+  height: 120px;
   border-right: 2px solid #fff;
 }
 .border {
@@ -66,16 +67,17 @@ display: none;
   font-family: myFont;
 }
 .identity-text p {
-  font-size: 20px;
+  font-size: 17px;
 }
 .identity-text h3 {
-  font-size: 22px;
+  font-size: 19px;
 }
 .identity-text h4 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
 }
 .bengali {
+  font-family: myFont;
   color: white;
   display: flex;
   flex-direction: column;
@@ -108,7 +110,7 @@ display: none;
   position: absolute;
   right: 20px;
   bottom: 10px;
-  top: 50px;
+  top: 66px;
 }
 .order {
   margin: 40px 0 0 0;
